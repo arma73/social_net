@@ -1,12 +1,18 @@
 // Core
 import { hot } from "react-hot-loader/root";
+import { BrowserRouter } from "react-router-dom";
+
+// Routes
+import Routes from "_routes/Routes";
 
 // Styles
 import "normalize.css";
 
 const App = () => (
     <React.StrictMode>
-        <h1>Hello world</h1>
+        <BrowserRouter>
+            <Routes />
+        </BrowserRouter>
     </React.StrictMode>
 );
 
