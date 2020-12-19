@@ -7,6 +7,7 @@ import Routes from "_routes/Routes";
 
 // Styles
 import "normalize.css";
+import "_theme/main.css";
 
 const App = () => (
     <React.StrictMode>
