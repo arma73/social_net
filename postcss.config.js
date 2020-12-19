@@ -16,8 +16,8 @@ module.exports = ({ env }) => ({
         // PostCSS Custom Properties lets you use Custom Properties in CSS, following the CSS Custom Properties specification.
         // Note: This plugin only processes variables that are defined in the :root selector.
         "postcss-custom-properties": {
-            "preserve": false,
-            // "importFrom": "path/to/file.css", // => :root { --color: red }
+            "preserve": true,
+            "importFrom": "./src/theme/root.css", // => :root { --color: red }
         },
         // PostCSS Custom Media lets you use Custom Media Queries in CSS, following the CSS Media Queries specification.
         "postcss-custom-media": {},
