@@ -1,7 +1,4 @@
-// Core
 import { Route, Switch } from "react-router-dom";
-
-// Helpers
 import { mapRoutes } from "./mapRoutes";
 
 const Routes = () => {
