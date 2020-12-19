@@ -1,9 +1,17 @@
+// Core
 import { Route, Switch } from "react-router-dom";
+
+// Helpers
 import { mapRoutes } from "./mapRoutes";
 
 const Routes = () => {
     const maps = [
-        ...mapRoutes.map(({ exact, path, component, title }) => (
+        ...mapRoutes.map(({ 
+            exact, 
+            path, 
+            component, 
+            "data": { title }
+        }) => (
             <Route 
                 exact={exact} 
                 path={path} 
