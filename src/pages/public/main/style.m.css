@@ -1,0 +1,26 @@
+.layout {
+    overflow: hidden;
+
+    .box {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+
+    .button {
+        padding: 6px 43px;
+        letter-spacing: 1px;
+        background-color: transparent;
+        border: 2px solid var(--grey-300);
+        color: white;
+        transition: 0.3s ease all;
+
+        &:hover {
+            background-color: var(--grey-700);
+            border: none;
+        }
+    }
+
+    .bg__image {
+    }
+}
