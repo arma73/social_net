@@ -1,16 +1,14 @@
 :root {
     /* colors */
-    --bg                : #c2c4c9;
-    --main-color        : #c75584;
+    --bg                : #fff;
+    --bg-section        : #778899;
+    --main-color        : #2F4F4F;
     --font-color        : #646473;
     --font-title        : #363837;
     --btn-bg            : #989fb3;
     --btn-bg-hover      : #93969e;
-    --theme-primary     : #f56caf;
-    --theme-accent      : #e080af;
-    /* --bg-section     : ; */
-    /* --font-section   : ; */
-    /* --font-link      : ; */
+    --theme-primary     : #A7A8AA;
+    --theme-accent      : #EBECED;
 
     /* palette of gray */
     --grey-100          : #F5F6F7;
