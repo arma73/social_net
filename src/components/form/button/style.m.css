@@ -1,0 +1,85 @@
+@value p-font-size-lg p-font-family from "_theme/var.css";
+@value xs-padding: 8px 12px;
+@value sm-padding: 11px 12px;
+@value md-padding: 15px 16px;
+@value lg-padding: 17px 18px;
+
+.core {
+    border-radius: 4px;
+    line-height: 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: p-font-family;
+    font-size: p-font-size-lg;
+}
+
+.button {
+    composes: core;
+
+    /* colors */
+    &.grey {
+        background-color: var(--grey-300);
+        color: var(--grey-700);
+        border: none;
+
+        &:hover {
+            background-color: var(--theme-accent);
+            color: #fff;
+        }
+    }
+
+    &.outline {
+        background-color: white;
+        color: var(--grey-800);
+        box-shadow: inset 0 0 0 2px var(--grey-200);
+        transition: 0.3s ease all;
+
+        &:hover {
+            box-shadow: inset 0 0 0 2px var(--theme-accent);
+            background-color: var(--theme-primary);
+            color: #fff;
+        }
+    }
+
+    &.transparent {
+        background-color: transparent;
+        transition: 0.3s ease all;
+
+        &:hover {
+            color: var(--grey-700);
+
+            span {
+                color: var(--grey-700);
+            }
+        }
+    }
+
+    &.white {
+        background-color: #fff;
+        color: var(--font-color);
+
+        &:hover {
+            background-color: var(--theme-accent);
+            color: white;
+        }
+    }
+
+    /* sizes */
+    &.xs {
+        padding: xs-padding;
+    }
+
+    &.sm {
+        padding: sm-padding;
+    }
+
+    &.md {
+        padding: md-padding;
+    }
+
+    &.lg {
+        padding: lg-padding;
+    }
+}
