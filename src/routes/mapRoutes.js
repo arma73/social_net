@@ -1,11 +1,11 @@
-import Home from "_pages/public/Home";
+import Main from "_pages/public/main";
 
 export const mapRoutes = [
     {
         "path": "/",
-        "component": Home,
+        "component": Main,
         "data": {
-            "title": "home page",
+            "title": "start page",
         },
         "exact": true,
     }
