@@ -3,32 +3,32 @@
     md                  ➡ medium
     lg                  ➡ large
 
-    ph                  ➡ phone
+    ph                  ➡ phone [ 📱 - portrait | 📱 ➡ 🔃 landscape ]
     tab                 ➡ tablet
     deskt               ➡ desktop 
 */
 
 /* display size */
-$ph-portrait            : "(width <= 414px)";
-$ph-lanscape            : "(width >= 415px) and (width <= 667px)";
-$tab-portrait           : "(width >= 668px) and (width <= 768px)";
-$tab-landscape          : "(width >= 769px) and (width <= 1024px)";
-$deskt-sm               : "(width >= 1025px) and (width <= 1366px)";
-$deskt-md               : "(width >= 1367px) and (width <= 1680px)";
-$deskt-lg               : "(width >= 1681px) and (width <= 1920px)";
-$deskt-xl               : "(width >= 1921px)";
+@value ph-portrait: screen and (max-width: 414px) and (orientation: portrait);
+@value ph-landscape: screen and (min-width: 415px) and (max-width: 768px) and (orientation: landscape);
+@value tab-portrait: screen and (min-width: 668px) and (max-width: 768) and (orientation: portrait);
+@value tab-landscape: screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape);
+@value deskt-sm: screen and (min-width: 1025px) and (max-width: 1366px);
+@value deskt-md: screen and (min-width: 1367px) and (max-width: 1680px);
+@value deskt-lg: screen and (min-width: 1681px) and (max-width: 1920px);
+@value deskt-xl: screen and (min-width: 1921px);
 
 /* font-size */
-$p-font-size-ph         : 15px;
-$p-font-size-sm         : 16px;
-$p-font-size-md         : 17px;
-$p-font-size-lg         : 19px;
+@value p-font-size-ph: 15px;
+@value p-font-size-sm: 16px;
+@value p-font-size-md: 17px;
+@value p-font-size-lg: 19px;
 
-$h1-font-size-ph        : 28px;
-$h1-font-size-sm        : 31px;
-$h1-font-size-md        : 33px;
-$h1-font-size-lg        : 36px;
+@value h-font-size-ph: 28px;
+@value h-font-size-sm: 31px;
+@value h-font-size-md: 33px;
+@value h-font-size-lg: 36px;
 
 /* font-family */
-$h1-font-family         : system-ui;
-$p-font-family          : system-ui;
+@value p-font-family: "Alegreya Sans", system-ui;
+@value h-font-family: "Alegreya Sans", system-ui;
