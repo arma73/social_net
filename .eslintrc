@@ -193,6 +193,7 @@
             2,
             {
                 "code": 150,
+                "comments": 100,
                 "tabWidth": 4,
                 "ignoreUrls": true,
                 "ignoreStrings": true,
