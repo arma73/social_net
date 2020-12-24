@@ -44,6 +44,7 @@
     "@svgr/webpack": "^5.5.0",
     "autoprefixer": "^10.0.4",
     "babel-loader": "^8.2.2",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "cache-loader": "^4.1.0",
     "case-sensitive-paths-webpack-plugin": "^2.3.0",
