@@ -166,8 +166,8 @@
             }
         ],
 
-        //BEM
-        "indent": ["error", 4],
+        //core
+        "indent": ["error", 4, { "SwitchCase": 1 }],
         "camelcase": 0,
 
         //Tabs
