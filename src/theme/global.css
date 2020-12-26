@@ -1,0 +1,5 @@
+:global {
+    ul, li {
+        list-style: none;
+    }
+}
