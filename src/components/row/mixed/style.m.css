@@ -1,0 +1,34 @@
+.mix {
+    --column-gutter: 24px;
+    --row-gutter: 40px;
+    --columns: 2;
+
+    display: grid;
+    padding: 0;
+    margin: 0;
+
+    grid-template-columns: repeat(var(--columns), 50vw);
+    
+    grid-auto-rows: 50vw;
+    grid-auto-flow: dense;
+
+    @media screen and (min-width: 26rem) {
+        grid-template-columns: repeat(3, calc(100/3)vw);
+        grid-auto-rows: calc(100/3)vw;
+    }
+
+    @media screen and (min-width: 50rem) {
+        grid-template-columns: repeat(4, 25vw);
+        grid-auto-rows: 25vw;
+    }
+
+    @media screen and (min-width: 60rem){
+        grid-template-columns: repeat(5, 20vw);
+        grid-auto-rows: 20vw; 
+    }
+
+    @media screen and (min-width: 80rem) {
+        grid-template-columns: repeat(3, calc(100%/3));
+        grid-auto-rows: calc(100/6)vw;
+    }
+}
