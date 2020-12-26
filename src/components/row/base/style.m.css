@@ -1,0 +1,25 @@
+@value layout-size-w from "_theme/var.css";
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+    flex-grow: 1;
+    height: 293px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width: layout-size-w) {
+        height: calc(33vw - 10px); 
+    }
+
+    
+    @media screen and (max-width: 735px) {
+        margin-bottom: 3px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
