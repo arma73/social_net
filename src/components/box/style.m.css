@@ -2,6 +2,7 @@
     border: 1px solid var(--grey-200);
     border-radius: 10px;
     box-shadow: 0px 0px 17px -2px var(--grey-300);
+    overflow: hidden;
 }
 
 .box {
