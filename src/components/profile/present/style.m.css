@@ -1,0 +1,32 @@
+@value p-font-family from "_theme/var.css";
+
+.present {
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: p-font-family;
+
+    li {
+        margin-left: 0;
+        font-size: 16px;
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        span {
+            color: inherit;
+            b {
+                color: rgba(var(--i1d,38,38,38),1);
+                font-weight: 600;
+                white-space: pre;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            margin-right: 0px;
+        }
+    }
+}
