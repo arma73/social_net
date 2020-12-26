@@ -1,15 +1,12 @@
 import { connect } from "react-redux";
-import Posts from "_components/posts";
-import Grid from "_components/grid";
+import Glance from "_components/glance";
 import { imagesGallery } from "_settings/mocks/postsGallery";
 
 const PresentProfile = ({ target }) => (
-    <Posts>
-        <Grid
-            view={target}
-            content={imagesGallery}
-        />
-    </Posts>
+    <Glance
+        view={target}
+        content={imagesGallery}
+    />
 );
 
 const mapState = ({ view }) => ({
