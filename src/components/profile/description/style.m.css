@@ -1,0 +1,15 @@
+@value p-font-family, ph-portrait from "_theme/var.css";
+
+.descBox {
+    width: calc(100% - 30px);
+    font-family: p-font-family;
+    
+    span {
+        display: block;
+        text-align: justify;
+    }
+
+    @media ph-portrait {
+        margin-top: 10px;
+    }
+}
