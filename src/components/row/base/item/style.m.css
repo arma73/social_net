@@ -1,0 +1,38 @@
+@value tab-portrait, ph-portrait from "_theme/var.css";
+
+.item {
+    flex: 1 0 0%;
+    position: relative;
+    margin-right: 28px;
+    background-color: rgb(239, 239, 239);
+
+    &.transparent {
+        background-color: transparent;
+        border: none;
+    }
+
+    .wrapp {
+        overflow: hidden;
+        padding-bottom: 100%;
+
+        img {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            user-select: none;
+            width: 100%;
+        }
+    }
+
+    &:last-child {
+        margin-right: 0px;
+    }
+
+    @media screen and (max-width: 735px) {
+        margin-right: 3px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
