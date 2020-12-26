@@ -1,5 +1,5 @@
 .core {
-    height: 100vh;
+    height: max-content;
     background-color: var(--bg);
 }
 
