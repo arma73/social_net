@@ -1,0 +1,52 @@
+.list {
+    display: flex;
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+    .item {
+        cursor: pointer;
+        display: flex;
+        margin-right: 10px;
+        align-items: center;
+        color: #8e8e8e;
+        text-transform: uppercase;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .target {
+            display: flex;
+            align-items: center;
+            svg {
+                margin-top: 4px;
+                fill: #8e8e8e;
+            }
+
+            &.active {
+                color: rgb(38,38,38);
+
+                svg {
+                    fill: rgb(38,38,38);
+                }
+            }
+            
+            .targetText {
+                margin-left: 6px;
+            }
+        }
+
+        @media screen and (min-width: 736px) {
+            margin-right: 60px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
