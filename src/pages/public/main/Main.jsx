@@ -9,7 +9,7 @@ import { layout, box, button, bgImage } from "./style.m.css";
 
 const Main = () => {
     const history = useHistory();
-    const handleRoute = () => history.push("/gallery");
+    const handleRoute = () => history.push("/self");
 
     return (
         <Layout view={{ "center": true }} className={layout}>
@@ -24,7 +24,7 @@ const Main = () => {
                     onClick={handleRoute}
                     className={button}
                 >
-                    Gallery
+                    Self page
                 </Button>
             </Box>
         </Layout>
