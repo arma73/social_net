@@ -1,0 +1,39 @@
+.hover {
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+
+    ul {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline-flex;
+            flex-direction: row-reverse;
+            margin-right: 30px;
+            
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .icon {
+                margin-right: 6px;
+            } 
+        }
+    }
+}
