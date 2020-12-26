@@ -1,5 +1,5 @@
 import Main from "_pages/public/main";
-import Gallery from "_pages/public/gallery";
+import SelfProfile from "_pages/public/selfprofile";
 
 export const mapRoutes = [
     {
@@ -11,11 +11,11 @@ export const mapRoutes = [
         "exact": true,
     },
     {
-        "path": "/gallery",
-        "component": Gallery,
+        "path": "/self",
+        "component": SelfProfile,
         "data": {
-            "title": "gallery page",
+            "title": "SelfProfile page",
         },
         "exact": true,
-    }
+    },
 ];
