@@ -1,0 +1,8 @@
+.posts {
+    display: flex;
+    align-items: stretch;
+    border: none;
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
