@@ -30,5 +30,8 @@
 @value h-font-size-lg: 36px;
 
 /* font-family */
-@value p-font-family: "Alegreya Sans", system-ui;
-@value h-font-family: "Alegreya Sans", system-ui;
+@value p-font-family: "Alegreya Sans", -apple-system, system-ui;
+@value h-font-family: "Alegreya Sans", -apple-system, system-ui;
+
+/* sizes */
+@value layout-size-w: 935px;
