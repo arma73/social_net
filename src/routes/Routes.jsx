@@ -7,14 +7,14 @@ const Routes = () => {
             exact, 
             path, 
             component, 
-            "data": { title }
+            data
         }) => (
             <Route 
                 exact={exact} 
                 path={path} 
                 component={component} 
                 key={path} 
-                data-name={title} 
+                data-name={data?.title} 
             />
         ))
     ];
