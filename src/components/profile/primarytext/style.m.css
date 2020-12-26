@@ -1,0 +1,17 @@
+@value h-font-family from "_theme/var.css";
+
+.font {
+    margin-bottom: 20px;
+    padding: 8px 0;
+
+    h2 {
+        white-space: nowrap;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 32px;
+        margin: -5px 0 -6px;
+        font-family: h-font-family;
+        text-overflow: ellipsis;
+        color: rgba(38, 38, 38, 1);
+    }
+}
