@@ -8,6 +8,7 @@ const BaseRow = ({ content }) => {
             <Item 
                 content={item} 
                 key={item.empty ? item.id : String(item)}
+                onHover={() => console.log("hover")}
                 view={{
                     "empty": !!item.empty,
                 }}

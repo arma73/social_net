@@ -3,6 +3,7 @@
 .item {
     flex: 1 0 0%;
     position: relative;
+    cursor: pointer;
     margin-right: 28px;
     background-color: rgb(239, 239, 239);
 
