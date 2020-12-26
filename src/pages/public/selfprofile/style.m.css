@@ -1,0 +1,17 @@
+@value layout-size-w from "_theme/var.css";
+
+.layout {
+    max-width: layout-size-w;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    .box {
+        /* margin: 0 auto 20px; */
+        width: 100%;
+        margin-top: 10px;
+        flex-direction: column;
+        &.profileBox {
+            padding: 10px 0;
+        }
+    }
+}
