@@ -11,7 +11,7 @@ const MixedItems = ({ className, content }) => {
             return (
                 <div className={`${item} ${view} ${className}`} key={photo.id}>
                     <Img
-                        src={`public/assets/images/gallery/${photo.fileName}`}
+                        src={`/public/assets/images/gallery/${photo.fileName}`}
                         component="img"
                         className={img}
                         style={{ "objectFit": "cover" }}
