@@ -1,5 +1,21 @@
 :global {
+    * {
+        user-select: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #app {
+        z-index: 0;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    
     ul, li {
         list-style: none;
     }
+
 }
