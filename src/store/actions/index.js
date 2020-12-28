@@ -23,3 +23,11 @@ export const setActiveTargetView = view => ({
     "type": types.SET_ACTIVE_TARGET_VIEW,
     "payload": view,
 });
+
+/**
+ * saving state from routes to recognize where the movement was from
+ */
+export const setLocationStateFrom = from => ({
+    "type": types.SET_LOCATION_STATE_FROM,
+    "payload": from,
+});
