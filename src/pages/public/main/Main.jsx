@@ -1,24 +1,18 @@
 import { useHistory } from "react-router-dom";
+import { SELF_PAGE_ROUTE } from "_settings/routes";
 import Box from "_components/box";
 import Layout from "_components/layout";
-import Img from "_components/img";
 import Button from "_components/form/button";
 
-import photoBgImage from "_assets/images/bg/axel_bg.jpg";
-import { layout, box, button, bgImage } from "./style.m.css";
+import { layout, box, button } from "./style.m.css";
 
 const Main = () => {
     const history = useHistory();
-    const handleRoute = () => history.push("/self");
+    const handleRoute = () => history.push(SELF_PAGE_ROUTE);
 
     return (
         <Layout view={{ "center": true }} className={layout}>
             <Box view={{ "size": "full", "center": true }} className={box}>
-                <Img
-                    src={photoBgImage}
-                    component="div"
-                    className={bgImage}
-                />
                 <Button
                     style={{ "position": "absolute" }}
                     onClick={handleRoute}

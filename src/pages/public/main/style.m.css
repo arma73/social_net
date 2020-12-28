@@ -8,19 +8,15 @@
     }
 
     .button {
-        padding: 6px 43px;
+        padding: 15px 75px;
         letter-spacing: 1px;
-        background-color: transparent;
-        border: 2px solid var(--grey-300);
-        color: white;
         transition: 0.3s ease all;
+        background-color: var(--btn-bg);
+        color: #FFF;
 
         &:hover {
-            background-color: var(--grey-700);
+            background-color: var(--btn-bg-hover);
             border: none;
         }
-    }
-
-    .bg__image {
     }
 }
