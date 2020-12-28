@@ -3,27 +3,27 @@ import GridItems from "_components/portray/grid";
 import MixedItems from "_components/portray/mixed";
 import convertObjectToGroups from "_utils/convertObjectToGroups";
 
-import { baseGrid, grid, mixed } from "./style.m.css";
+import { basePortray, gridPortray, mixedPortray } from "./style.m.css";
 
-const BaseGrid = ({ content }) => {
+const PortrayBase = ({ content }) => {
     const mapRows = () =>
         convertObjectToGroups(content, 3).map(item => <BaseRow content={item} key={String(item)} />);
 
     return (
-        <article className={baseGrid}>
+        <article className={basePortray}>
             {mapRows()}
         </article>
     );
 };
 
-const Grid = ({ content }) => (
-    <div className={grid}>
+const PortrayGrid = ({ content }) => (
+    <div className={gridPortray}>
         <GridItems content={content} />
     </div>
 );
 
-const Mixed = ({ content }) => (
-    <div className={mixed}>
+const PortrayMixed = ({ content }) => (
+    <div className={mixedPortray}>
         <MixedItems content={content} />
     </div>  
 );
@@ -31,13 +31,13 @@ const Mixed = ({ content }) => (
 const Glance = ({ view = "base", content }) => {
     switch (view) {
         case "base":
-            return <BaseGrid content={content} />;
+            return <PortrayBase content={content} />;
         case "grid":
-            return <Grid content={content} />;
+            return <PortrayGrid content={content} />;
         case "mixed":
-            return <Mixed content={content} />;
+            return <PortrayMixed content={content} />;
         default:
-            return <BaseGrid content={content} />;
+            return <PortrayBase content={content} />;
     }
 };
 

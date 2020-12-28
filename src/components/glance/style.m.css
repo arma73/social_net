@@ -1,4 +1,4 @@
-.baseGrid {
+.base--portray {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-.grid {
+.grid--portray {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -15,7 +15,7 @@
     grid-auto-flow: row dense;
 }
 
-.mixed {
+.mixed--portray {
     --column-gutter: 24px;
     --row-gutter: 40px;
     --columns: 2;
