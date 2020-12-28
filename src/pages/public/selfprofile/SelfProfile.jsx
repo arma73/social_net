@@ -7,18 +7,10 @@ import Layout from "_components/layout";
 import Box from "_components/box";
 import ProfileBox from "_components/profile/box";
 import ProfileDescription from "_components/profile/description";
-import TargetView from "_components/targetview";
+import TargetGlance from "_components/targetglance";
 
 import photoPersonAvatar from "_assets/images/gallery/person_avatar.jpg";
 import { layout, box, profileBox } from "./style.m.css";
-
-// NOTE: components ➡ Posts [
-//    PostsHead,
-//    Grid[
-//      FlexRow[FlexItem] ?? GridRow[GridItem]
-//    ]
-// ]
-
 
 const SelfProfile = ({ breakpoint, setActiveTarget, target }) => (
     <Layout className={layout}>
@@ -46,7 +38,7 @@ const SelfProfile = ({ breakpoint, setActiveTarget, target }) => (
             </Portal>
         </Box>
         <Box className={box} style={{ "height": "35px" }}>
-            <TargetView currentActive={target} onClick={setActiveTarget} />
+            <TargetGlance currentActive={target} onClick={setActiveTarget} />
         </Box>
         <Box className={box}>
             <PresentProfile />
