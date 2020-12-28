@@ -3,7 +3,7 @@ import GridIcon from "_theme/icons/grid.svg";
 import MixedIcon from "_theme/icons/mixed.svg";
 import { list, item, active, target, targetText } from "./style.m.css";
 
-const TargetView = ({ currentActive = "base", onClick }) => {
+const TargetGlance = ({ currentActive = "base", onClick }) => {
     const mapList = () => [
         { "name": "base", "icon": { "component": BaseIcon, "viewBox": "0 0 68 85" } }, 
         { "name": "grid", "icon": { "component": GridIcon, "viewBox": "0 0 68 85" } },
@@ -24,4 +24,4 @@ const TargetView = ({ currentActive = "base", onClick }) => {
     );
 };
 
-export default TargetView;
+export default TargetGlance;
