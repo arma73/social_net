@@ -2,12 +2,13 @@ import { connect } from "react-redux";
 import { setActiveTargetView } from "_store/actions";
 import withMediaQueryListener from "_containers/hoc/withMediaQueryListener";
 import Portal from "_containers/Portal";
-import PresentProfile from "_containers/PresentProfile";
 import Layout from "_components/layout";
 import Box from "_components/box";
 import ProfileBox from "_components/profile/box";
 import ProfileDescription from "_components/profile/description";
 import TargetGlance from "_components/targetglance";
+import Glance from "_components/glance";
+import { imagesGallery } from "_settings/mocks/postsGallery";
 
 import photoPersonAvatar from "_assets/images/gallery/person_avatar.jpg";
 import { layout, box, profileBox } from "./style.m.css";
@@ -41,7 +42,10 @@ const SelfProfile = ({ breakpoint, setActiveTarget, target }) => (
             <TargetGlance currentActive={target} onClick={setActiveTarget} />
         </Box>
         <Box className={box}>
-            <PresentProfile />
+            <Glance
+                view={target}
+                content={imagesGallery}
+            />
         </Box>
     </Layout>
 );
