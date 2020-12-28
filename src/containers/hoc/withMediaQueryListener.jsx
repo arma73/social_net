@@ -4,11 +4,11 @@ import { setActiveBreakpoint } from "_store/actions";
 import { breakpoints } from "_settings/breakpoints";
 import getDisplayName from "_utils/getDisplayName";
 
-const mapStateToProps = ({ breakpoint }) => ({
+const mapState = ({ breakpoint }) => ({
     breakpoint,
 });
 
-const withMediaQueryListener = WrappedComponent => connect(mapStateToProps)(
+const withMediaQueryListener = WrappedComponent => connect(mapState)(
     /**
      * This component will house the event handler for your changing breakpoints, 
      * and will also communicate with your store to report the active breakpoints on 
