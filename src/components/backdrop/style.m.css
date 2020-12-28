@@ -1,0 +1,32 @@
+.disable-dbl-tap-zoom {
+    touch-action: manipulation;
+}
+
+.backdrop {
+    background-color: black;
+    position: fixed;
+    overflow-y: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.close {
+    padding: 12px;
+    top: 0;
+    right: 0;
+    position: absolute;
+
+    .buttonClose {
+        cursor: pointer;
+        padding: 8px;
+        background: transparent;
+        border: 0;
+
+        svg {
+            fill: white;
+        }
+    }
+}
